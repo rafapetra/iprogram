@@ -1,6 +1,6 @@
 body { 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #cccccc;
+  background-color: #6869a9;
 }
 
 .container {
@@ -11,7 +11,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.5);
+  background: #efea8e;
   justify-content: center;
   
 }
@@ -21,7 +21,8 @@ body {
   align-content: center;
   padding: 7px;
   text-align: center;
-  margin: 2%
+  margin: 2%;
+  color: #6869a9;
 ;}
 
 .content {
@@ -30,7 +31,7 @@ body {
   order: 2;
   padding: 10px;
   text-align: left;
-  background-color: aquamarine;
+  background-color: #60b8c2;
   justify-content: space-evenly;
   gap: 10px 10px;
 }
@@ -110,9 +111,14 @@ body {
 
 .hidden { 
   display: none;
+  padding: 4%;
+}
+
+.resultbox { 
+  padding: 4%;
 }
 
 .img {
   max-width: 30%;
-  margin: 10px;
+  margin: 4%;
 }

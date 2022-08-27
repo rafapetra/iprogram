@@ -34,7 +34,7 @@ window.onload = function() {
     const button18 = document.getElementById("option18");
 
     //show results
-    if (button1.checked && button8.checked) {
+    if (button1.checked) {
       document.getElementById("swift").style.display = "block";
       document.getElementById("phyton").style.display = "none";
       document.getElementById("jav").style.display = "none";      
