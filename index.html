@@ -2,116 +2,110 @@
   <html lang="en-US">
     <head>
       <title>iProgram</title>
-      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
       <link href="css/styles.css" rel="stylesheet" type="text/css">
       <script src="js/script.js"></script>
-      <script src="js/bootstrap.js"></script>
     </head>
 
     <body class="body">
       <div class="container">
-
         <div class="header">
           Hello World!<br>
           Welcome to iProgram - A Programming Language Suggester
         </div>
 
         <div class="content">
-          <div class="box1">
-            <div>What system do you want to write code for?</div>
-            <label>
-              <input type="radio" name="question1" value="1" id="option1" checked />
-              iOS
-            </label><br>  
-            <label>
-              <input type="radio" name="question1" value="2" id="option2"/>
-              Android
-            </label><br>
-              <input type="radio" name="question1" value="3" id="option3" />
-              Video Games
-            </label>
+          <div class="questions"> 
+            <div class="box1">
+              <form id="questions">
+              <div class="question">What system do you want to write code for?</div>
+                <input type="radio" name="question1" value="ios" id="option1"/>
+                  <label>iOS</label><br>
+                <input type="radio" name="question1" value="android" id="option2"/>
+                  <label>Android</label><br>
+                <input type="radio" name="question1" value="games" id="option3"/>
+                  <label>Video Games</label><br>
+            </div>
+
+            <div class="box2">
+              <div class="question">What company would you like to work for?</div>
+                <input type="radio" name="option4" value="1" id="option4"/>
+                  <label>Google</label><br>              
+                <input type="radio" name="option5" value="2" id="option5"/>
+                  <label>Nintendo</label><br>
+                <input type="radio" name="option6" value="3" id="option6" />
+                  <label>Starbucks</label><br>
+            </div>
+
+            <div class="box3">
+              <div class="question">What was your first pokémon starter?</div>
+                <input type="radio" name="option7" value="1" id="option7">
+                  <label>Charmander</label><br>  
+                <input type="radio" name="option8" value="2" id="option8"/>
+                  <label>Squirtle</label><br>
+                <input type="radio" name="option9" value="3" id="option9" />
+                  <label>Bulbassaur</label><br>
+            </div>
+
+            <div class="box4">
+              <div class="question">What sounds most fun to you?</div>
+                <input type="radio" name="option10" value="1" id="option10">
+                  <label>Coding</label><br>
+                <input type="radio" name="option11" value="2" id="option11"/>
+                  <label>Skiing </label><br>
+               <input type="radio" name="option12" value="3" id="option12" />
+                  <label>Video Games</label><br>
+            </div>
+
+            <div class="box5">
+              <div class="question">What food sounds better to you?</div>
+                <input type="radio" name="option13" value="1" id="option13">
+                  <label>Fruits</label><br>
+                <input type="radio" name="option14" value="2" id="option14"/>
+                  <label>Vegetables</label><br>
+                <input type="radio" name="option15" value="3" id="option15" />
+                  <label>Cashews</label><br>
+            </div>
+
+            <div class="box6">
+              <div class="question">Do you believe in aliens?</div>
+                <input type="radio" name="option16" value="1" id="option16">
+                  <label>Yes</label><br>
+                <input type="radio" name="option17" value="2" id="option17"/>
+                  <label>No</label><br>
+                <input type="radio" name="option18" value="3" id="option18" />
+                 <label>Undecided</label><br>
+            </div>
+
+            <div class="submit">
+              <button type="submit">Check Results</button>
+            </div>
+
+          </form>
+          </div><!--close questions-->
+
+          <div class="results">
+
+            <div id="swift" class="hidden">
+              <div>You should learn Swift</div>
+              <div><img class="img" src="img/swift.jpg"></div>
+            </div>
+
+            <div id="jav" class="hidden">
+                <div>You should learn JavaScript</div>
+                <div><img class="img" src="img/jslogo.jpg"></div>
+            </div>
+            
+            <div id="phyton" class="hidden">
+              <div>You should learn Phyton</div>
+              <div><img class="img" src="img/phyton.gif"></div>
+            </div>
+
           </div>
-
-          <div class="box2">
-            <div>What company would you like to work for?</div>
-            <label>
-              <input type="radio" name="question1" value="1" id="option1" checked />
-              Google
-            </label><br>  
-            <label>
-              <input type="radio" name="question1" value="2" id="option2"/>
-              Android
-            </label><br>
-              <input type="radio" name="question1" value="3" id="option3" />
-              Video Games
-            </label>
-          </div>
-
-
-          <div class="box3">
-            <div>What system do you want to write code for?</div>
-            <label>
-              <input type="radio" name="question1" value="1" id="option1" checked />
-              iOS
-            </label><br>  
-            <label>
-              <input type="radio" name="question1" value="2" id="option2"/>
-              Android
-            </label><br>
-              <input type="radio" name="question1" value="3" id="option3" />
-              Video Games
-            </label>
-          </div>
-
-          <div class="box4">
-            <div>What system do you want to write code for?</div>
-            <label>
-              <input type="radio" name="question1" value="1" id="option1" checked />
-              iOS
-            </label><br>  
-            <label>
-              <input type="radio" name="question1" value="2" id="option2"/>
-              Android
-            </label><br>
-              <input type="radio" name="question1" value="3" id="option3" />
-              Video Games
-            </label>
-          </div>
-
-          <div class="box5">
-            <div>What system do you want to write code for?</div>
-            <label>
-              <input type="radio" name="question1" value="1" id="option1" checked />
-              iOS
-            </label><br>  
-            <label>
-              <input type="radio" name="question1" value="2" id="option2"/>
-              Android
-            </label><br>
-              <input type="radio" name="question1" value="3" id="option3" />
-              Video Games
-            </label>
-          </div>
-
-          <div class="box6">
-            <div>What system do you want to write code for?</div>
-            <label>
-              <input type="radio" name="question1" value="1" id="option1" checked />
-              iOS
-            </label><br>  
-            <label>
-              <input type="radio" name="question1" value="2" id="option2"/>
-              Android
-            </label><br>
-              <input type="radio" name="question1" value="3" id="option3" />
-              Video Games
-            </label>
-          </div>
-
-        </div>
-
-        <div class="results">
-          Results:
-        </div>
+          
+        
+        </div> <!--close content-->
 
       </div>
+
+    </body>
+    </html>

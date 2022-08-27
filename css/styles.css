@@ -28,12 +28,22 @@ body {
   display: flex;
   flex-direction: row;
   order: 2;
-  padding: 7px;
+  padding: 10px;
   text-align: left;
   background-color: aquamarine;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 10px 10px;
+}
+
+.question {
+  padding: 2px;
+  margin-bottom: 15px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 10px;
 }
 
 .box1 {
@@ -73,10 +83,19 @@ body {
   background-color:beige;
   justify-content: space-evenly;
 }
+
 .box6 {
   order: 6;
   padding: 7px;
   text-align: left;
+  background-color:beige;
+  justify-content: space-evenly;
+}
+
+.submit {
+  order: 7;
+  padding: 7px;
+  text-align: center;
   background-color:beige;
   justify-content: space-evenly;
 }
@@ -86,4 +105,14 @@ body {
   padding: 7px;
   text-align: center;
   background-color: azure;
+  width: 50%;
 ;}
+
+.hidden { 
+  display: none;
+}
+
+.img {
+  max-width: 30%;
+  margin: 10px;
+}
